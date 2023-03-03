@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./css/reg.css">
+</head>
+<body class="signin-page">
+    <div class="signin-header-footer"></div>
+
+    <div class="signin-body">
+
+        <div>
+            <img class="signin-body_anspaugh-logo" src="./images/logo-1.png">
+            
+        </div>
+        
+
+        <div class="signin-body-container">
+            <form class="signin-body-container_form">
+                <h1>Sign In</h1>
+
+                <!-- err masages -->
+                <p class="err-msg" id="err-msg"></p>
+
+                <div class="signin-body-container_form-deatail">
+
+                    <div class="signin-body-container_form-left">
+                        <div class="signin-body-container_form-left_item">Username</div>
+                        <div class="signin-body-container_form-left_item">Password</div>
+                    </div>
+                    
+                    <div class="signin-body-container_form-right">
+                        <input class="signin-body-container_form-right_item" type="text" id="userName" name="userName">
+                        <input class="signin-body-container_form-right_item" type="password" id="password" name="password"> 
+                    </div>
+                    
+                </div>
+
+                <div class="signin-body_form-footer">
+                    <div>
+                        <label>Don't have an account?</label>
+                        <a href="./signup-page.html" class="navigate-links">Sign Up</a>
+                    </div>
+                </div>
+                <div>
+                    <button type="button" name="signin-btn" class="signin-btn" onclick="signIn()">Sign In</button>
+                </div>
+
+            </form>
+        
+        </div>
+
+    </div>
+
+    <div class="signin-header-footer"></div>
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

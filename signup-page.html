@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="./css/reg.css">
+</head>
+<body class="reg">
+    <div class="registration-header-footer"></div>
+
+    <div class="registration-body">
+        <img class="registration-body_anspaugh-logo" src="./images/logo-1.png">
+        
+        <div class="signup-body-container">
+            <form class="signup-body-container_form">
+                <h1>Sign Up</h1>
+
+                <!-- err masages -->
+                <p class="err-msg" id="err-msg"></p>
+
+                <div class="signup-body-container_form-deatail">
+
+                    <div class="signup-body-container_form-left">
+                        <div class="signup-body-container_form-left_item">Full Name</div>
+                        <div class="signup-body-container_form-left_item">Email Address</div>
+                        <div class="signup-body-container_form-left_item">Profile Picture</div>
+                        <div class="signup-body-container_form-left_item">Password</div>
+                        <div class="signup-body-container_form-left_item">Confirm Password</div>
+                    </div>
+                    
+                    <div class="signup-body-container_form-right">
+                        <div><input class="signup-body-container_form-right_item" type="text" id="full-name" name="full-name"></div>
+                        <div><input class="signup-body-container_form-right_item" type="email" id="email" name="email"></div>
+                        <div><input class="signup-body-container_form-right_item" type="file" id="image" name="image"></div>
+                        <div><input class="signup-body-container_form-right_item" type="password" id="new-password" name="password"></div> 
+                        <div><input class="signup-body-container_form-right_item" type="password" id="re-password" name="re-password"></div> 
+                    </div>
+                    
+                </div>
+
+                <div class="signup-body_form-footer">
+                    <label>Already have an account?</label>
+                    <a href="./signin-page.html" class="navigate-links">Sign In</a>
+                </div>
+                <div>
+                    <button type="button" name ="signup-btn" class="signup-btn" onclick="signUp()">Sign Up</button>
+                </div>
+
+            </form>
+        
+        </div>
+
+    </div>
+
+    <div class="registration-header-footer"></div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
